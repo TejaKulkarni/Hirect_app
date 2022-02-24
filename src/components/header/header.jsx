@@ -32,10 +32,16 @@ class Header extends Component {
                             <a class="nav-link" id="home" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" id="login" href="#">Sign in</a>
+                            <a class="nav-link" id="login" href="#">Recruiters</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" id="login" href="#">Job Seekers</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link" id="login" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" id="login" href="#">Contact Us</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link" id="login" href="#">Download</a>
@@ -44,7 +50,6 @@ class Header extends Component {
                     </div>
                 </div>
             </nav>
-
         );
     }
 }
