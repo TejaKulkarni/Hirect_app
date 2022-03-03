@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import './homepage.css';
+import { Footer } from '../../components';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import titleImg from '../../assets/homepage.png';
 import companies from '../../assets/companies.png';
@@ -9,9 +12,12 @@ import dj from '../../assets/DJ.png';
 import bi from '../../assets/BI.png';
 import yf from '../../assets/YF.png';
 
-class Homepage extends Component { 
-    render() { 
-        return (
+const Homepage = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
+    return (
+        <>
             <div className="containers">
                 <div className="container1">
                     <h1><span>1st Hiring App</span> for</h1>
@@ -24,10 +30,12 @@ class Homepage extends Component {
                     <img src={titleImg} alt='title' className='titleimg'/>
                 </div>
                 <div className="container2">
-                    <h1>TRUSTED BY 10,000+ STARTUPS</h1>
-                    <img src={companies} alt='companies' className='compimg'/>
-                    <h2>Meet Your Growth Needs</h2>
-                    <div className="row">
+                    <div className="trust" data-aos='fade-up'>
+                        <h1>TRUSTED BY 10,000+ STARTUPS</h1>
+                        <img src={companies} alt='companies' className='compimg'/>
+                    </div>
+                    <h2 data-aos='fade-up'>Meet Your Growth Needs</h2>
+                    <div className="row" data-aos='fade-up'>
                         <div className="col-md-4">
                             <div className="card" id="one">
                                 <h3>Instant Chat and Feedback</h3>
@@ -41,7 +49,7 @@ class Homepage extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row" data-aos='fade-up'>
                         <div className="col-md-4">
                             <div className="card" id="three">
                                 <h3>Instant Chat and Feedback</h3>
@@ -55,8 +63,8 @@ class Homepage extends Component {
                             </div>
                         </div>
                     </div>
-                    <h2>Featured by</h2>
-                    <div className="row">
+                    <h2 data-aos='fade-up'>Featured by</h2>
+                    <div className="row" data-aos='fade-up'>
                         <div className="col-md-4">
                             <div className="cards">
                                 <p>"With Hirect, recruiters and job seekers can chat directly, exchange information, and complete interviews in seconds, all from their mobile devices."</p>
@@ -76,11 +84,13 @@ class Homepage extends Component {
                             </div>
                         </div>
                     </div>
+                    <Footer/>
                 </div>
             </div>
-            
-        );
-    }
+        </>
+        
+        
+    );
 }
  
 export default Homepage;
