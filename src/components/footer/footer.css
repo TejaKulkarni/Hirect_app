@@ -1,0 +1,129 @@
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+footer img{
+    width: 200px;
+    height: 50px;
+    margin-top: 100px;
+    position: absolute;
+    left: 300px;
+}
+
+footer .container .head{
+    position: absolute;
+    margin-top: 150px;
+    left: 300px;
+    font-size: 30px;
+}
+
+footer .container .head2{
+    position: absolute;
+    margin-top: 190px;
+    left: 300px;
+    font-size: 30px;
+}
+
+footer #first{
+    position: absolute;
+    margin-top: 100px;
+    left: 800px;
+}
+
+footer #first h3{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+footer #second{
+    position: absolute;
+    margin-top: 100px;
+    left: 1100px;
+}
+
+footer #second h3{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+footer #third{
+    position: absolute;
+    margin-top: 100px;
+    left: 1400px;
+}
+
+footer #third h3{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+footer ul li{
+    font-size: 25px;
+    list-style-type: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.twitter img{
+    margin-top: 300px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.linkedin img{
+    margin-top: 300px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.fb img{
+    margin-top: 300px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 120px;
+}
+
+.yt img{
+    margin-top: 300px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 180px;
+}
+
+.insta img{
+    margin-top: 300px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 240px;
+}
+
+.tt img{
+    margin-top: 292px;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    margin-left: 290px;
+}
+
+footer hr{
+    margin-top: 400px;
+}
+
+footer .foot-line{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+
