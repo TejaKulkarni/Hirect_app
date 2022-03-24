@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-import { useUserAuth } from "../context/UserAuthContext";
-import "./login_signup.css";
+import { useUserAuthrec } from "../contextrec/UserAuthContextrec";
+import "./login_signuprec.css";
 
-const Signup = () => {
+const Signuprec = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [password, setPassword] = useState("");
-  const { signUp } = useUserAuth();
+  const { signUp } = useUserAuthrec();
   let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -17,7 +17,7 @@ const Signup = () => {
     setError("");
     try {
       await signUp(email, password);
-      navigate("/");
+      navigate("/homerec");
     } catch (err) {
       setError(err.message);
     }
@@ -35,7 +35,7 @@ const Signup = () => {
             />
           </Link>
         </div>
-        <h2 className="login__heading">Jobseeker-Signup</h2>
+        <h2 className="login__heading">Recruiter-Signup</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -62,10 +62,10 @@ const Signup = () => {
         </Form>
       </div>
       <div className="p-4 box mt-3 text-center">
-        Already have an account? <Link to="/login">Log In</Link>
+        Already have an account? <Link to="/loginrec">Log In</Link>
       </div>
     </>
   );
 };
 
-export default Signup;
+export default Signuprec;

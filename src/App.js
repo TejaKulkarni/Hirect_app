@@ -6,11 +6,16 @@ import Login from "./logincomponents/Login";
 import Signup from "./logincomponents/Signup";
 import ProtectedRoute from "./logincomponents/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
+import Homerec from "./logincomprec/Homerec";
+import Loginrec from "./logincomprec/Loginrec";
+import Signuprec from "./logincomprec/Signuprec";
+import ProtectedRouterec from "./logincomprec/ProtectedRouterec";
+import { UserAuthContextProviderrec } from "./contextrec/UserAuthContextrec";
 import React from "react";
 
 function App() {
   return (
-    <Container style={{ width: "480px" }}>
+   
       <Row>
         <Col>
           <UserAuthContextProvider>
@@ -27,9 +32,24 @@ function App() {
               <Route path="/signup" element={<Signup />} />
             </Routes>
           </UserAuthContextProvider>
+        
+          <UserAuthContextProviderrec>
+            <Routes>
+              <Route
+                path="/homerec"
+                element={
+                  <ProtectedRouterec>
+                    <Homerec />
+                  </ProtectedRouterec>
+                }
+              />
+              <Route path="/loginrec" element={<Loginrec />} />
+              <Route path="/signuprec" element={<Signuprec />} />
+            </Routes>
+          </UserAuthContextProviderrec>
         </Col>
       </Row>
-    </Container>
+   
   );
 }
 

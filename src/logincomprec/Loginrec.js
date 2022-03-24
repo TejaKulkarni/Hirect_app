@@ -2,24 +2,35 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-import { useUserAuth } from "../context/UserAuthContext";
-import "./login_signup.css";
+import GoogleButton from "react-google-button";
+import { useUserAuthrec } from "../contextrec/UserAuthContextrec";
+import "./login_signuprec.css";
 
-const Signup = () => {
+const Loginrec = () => {
   const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
   const [password, setPassword] = useState("");
-  const { signUp } = useUserAuth();
-  let navigate = useNavigate();
+  const [error, setError] = useState("");
+  const { logIn, googleSignIn } = useUserAuthrec();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     try {
-      await signUp(email, password);
-      navigate("/");
+      await logIn(email, password);
+      navigate("/homerec");
     } catch (err) {
       setError(err.message);
+    }
+  };
+
+  const handleGoogleSignIn = async (e) => {
+    e.preventDefault();
+    try {
+      await googleSignIn();
+      navigate("/homerec");
+    } catch (error) {
+      console.log(error.message);
     }
   };
 
@@ -35,7 +46,8 @@ const Signup = () => {
             />
           </Link>
         </div>
-        <h2 className="login__heading">Jobseeker-Signup</h2>
+
+        <h2 className="login__heading">Recruiter-Login</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -56,16 +68,24 @@ const Signup = () => {
 
           <div className="d-grid gap-2">
             <Button variant="primary" type="Submit">
-              Sign up
+              Log In
             </Button>
           </div>
         </Form>
+        <hr />
+        <div>
+          <GoogleButton
+            className="g-btn"
+            type="dark"
+            onClick={handleGoogleSignIn}
+          />
+        </div>
       </div>
       <div className="p-4 box mt-3 text-center">
-        Already have an account? <Link to="/login">Log In</Link>
+        Don't have an account? <Link to="/signuprec">Sign up</Link>
       </div>
     </>
   );
 };
 
-export default Signup;
+export default Loginrec;
