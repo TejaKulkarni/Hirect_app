@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import './footer.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/hirect-logo.png';
@@ -10,8 +9,7 @@ import yt from '../../assets/yt.png';
 import insta from '../../assets/insta.png';
 import tt from '../../assets/tiktok.png';
 
-class Footer extends Component {
-    render() { 
+const Contact = () => {
         return (
             <footer>
                 <div className="container">
@@ -54,11 +52,8 @@ class Footer extends Component {
                     <div className="insta"><a href='https://www.instagram.com/hirect.us/'><img src={ insta } alt='instagram'/></a></div>
                     <div className="tt"><a href='https://www.tiktok.com/@hirectapp'><img src={ tt } alt='tiktok'/></a></div>
                 </div>
-                <hr></hr>
-                <div className="foot-line">©2022 Hirect One, Inc. All rights reserved · Privacy policy</div>
             </footer>
         );
-    }
 }
 
-export default Footer;
+export default Contact;

@@ -1,57 +1,62 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './header.css';
 
 import logo from '../../assets/hirect-logo.png';
 
-class Header extends Component {
-    render() { 
-        return (
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
+const Header = () => { 
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
+    useEffect(() => {
+        const showButton = () => {
+            if (window.innerWidth <= 960) {
+              setClick(false);
+            } else {
+              setClick(true);
+            }
+          };
+
+        showButton();
+        window.addEventListener('resize', showButton);
+        return () => window.removeEventListener('resize', showButton);
+      }, []);
+    
+
+    return (
+        <>
+            <div className='navbar'>
+                <div className='navbar-container container'>
+                    <Link to='/' className='navbar-brand' onClick={closeMobileMenu}>
                         <img src={logo} alt="logo" className='logo'/>
-                    </a>
-                    <button
-                    class="navbar-toggler" 
-                    type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#navbar1" 
-                    aria-controls="navbar1" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation"
-                    >
-                    <span
-                        class="navbar-toggler-icon d-flex justify-content-start align-items-center">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbar1">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                            <a class="nav-link" id="home" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" id="login" href="#">Recruiters</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" id="login" href="#">Job Seekers</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" id="login" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" id="login" href="#">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" id="login" href="#">Download</a>
-                            </li>
-                        </ul>
+                    </Link>
+                    <div className="menu-icon" onClick={handleClick}>
+                        {click ? <FaTimes /> : <FaBars />}
                     </div>
+                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                        <li className='nav-item'>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/jobseeker' className='nav-links' onClick={closeMobileMenu}>Job Seekers</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>Blog</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>Contact Us</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>Download</Link>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        );
-    }
+            </div>
+        </>
+    );
 }
  
 export default Header;
