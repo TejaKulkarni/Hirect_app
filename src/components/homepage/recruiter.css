@@ -58,6 +58,10 @@
     border: none;
 }
 
+.container .btn button:hover{
+    background-color: #e7e7e7;
+}
+
 .container .btn .hbtn{
     font-size: 24px;
     font-weight: 600;

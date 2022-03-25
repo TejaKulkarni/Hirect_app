@@ -8,10 +8,12 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Header} from './components';
 
 ReactDOM.render(
-  <Router>
-    <Header/>
-    <App />
-  </Router>,
+  <React.StrictMode>
+    <Router>
+      <Header />
+      <App />
+    </Router>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

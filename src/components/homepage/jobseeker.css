@@ -53,6 +53,10 @@
     border: none;
 }
 
+.container .btn1 button:hover{
+    background-color: #e7e7e7;
+}
+
 .container .btn1 .tbtn{
     font-size: 24px;
     font-weight: 600;

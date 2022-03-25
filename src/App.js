@@ -1,6 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
-import { Contact, Downloadpage, Login, Privacy } from "./components";
+import { Blogjob, Blogrec, Contact, Login, Privacy } from "./components";
 import { Signup } from "./components";
 import { ProtectedRoute } from "./components";
 import { UserAuthContextProvider } from './context/UserAuthContext';
@@ -13,6 +13,7 @@ import { Signuprec } from "./components";
 import { ProtectedRouterec } from "./components";
 import { UserAuthContextProviderrec } from './contextrec/UserAuthContextrec';
 import { Homerec } from './components';
+import { Downloadpage } from './components';
 
 function App() {
   return (
@@ -30,11 +31,13 @@ function App() {
               />
               <Route exact path="/" element={<Recruiter/>}/>
               <Route exact path="/jobseeker" element={<Jobseeker/>}/>
-              <Route path="/privacy" element={<Privacy />} />
-              <Route path="/download" element={<Downloadpage />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
+              <Route exact path="/privacy" element={<Privacy />} />
+              <Route exact path="/download" element={<Downloadpage />} />
+              <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/blogjob" element={<Blogjob/>} />
+              <Route exact path="/blogrec" element={<Blogrec/>} />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/signup" element={<Signup />} />
             </Routes>
           </UserAuthContextProvider>
 

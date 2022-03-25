@@ -45,12 +45,12 @@
     justify-content: end;
   }
   
-  .nav-item {
+  .navbar-container .nav-item {
     height: 80px;
     border-bottom: 2px solid transparent;
   }
   
-  .nav-item:hover {
+  .navbar-container .nav-item:hover {
     border-bottom: 2px solid #f00946;
   }
   
@@ -88,6 +88,14 @@
     border-radius: 20px;
   }
   
+
+  .drop {
+    border-bottom: 2px solid transparent;
+    margin-right: 130px;
+    margin-left: -100px;
+  }
+  
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
