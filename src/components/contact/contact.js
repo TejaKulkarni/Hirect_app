@@ -21,10 +21,9 @@ const Contact = () => {
                             <h3>Company</h3>
                             <ul>
                                 <li><a href="https://hirectapp.com/about-us">About Us</a></li>
-                                <li><a href="">Blogs</a></li>
                                 <li><a href="/loginrec">Recruiters</a></li>
                                 <li><a href="/login">Job Seekers</a></li>
-                                <li><a href="#">Download</a></li>
+                                <li><a href="/download">Download</a></li>
                             </ul>
                         </div>
 

@@ -1,4 +1,5 @@
 import './blog.css';
+import { Footer } from '..';
 
 import rec1 from '../../assets/rec1.jpeg';
 import rec11 from '../../assets/rec11.png';
@@ -51,6 +52,7 @@ function Blogrec() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

@@ -1,28 +1,25 @@
 import React from "react";
 import "./downloadpage.css";
+import { Footer } from '..';
 
 function Downloadpage() {
   return (
     <div>
-      <div className="p-4 box">
-        <div className="container">
-          <div className="download-modal modal-overlay">
-            <div className="modal">
-              <div className="title-area">
-                <h1 className="main-title">
-                  Hirect - A world of
-                  <br />
-                  talent is one tap away
-                </h1>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+
                 <div className="title-area-bottom">
                   <div className="title-area-left">
                     <h2
                       className="small-title"
-                      style={{ marginbottom: "15px" }}
+                      style={{ marginbottom: "15px",textAlign: 'center' }}
                     >
                       Hire Anytime, Anywhere
                     </h2>
-                    <h2 className="common-text">
+                    <h2 style= {{textAlign: 'center' }}>
                       Hirect is here to make your hiring process faster.
                       <br />
                       And you can chat with candidates anytime, anywhere.
@@ -50,7 +47,7 @@ function Downloadpage() {
                         <div className="get-hirect-c-input-form el-input">
                           <input
                             type="text"
-                            autocomplete="off"
+                            autoComplete="off"
                             id="get-hirect-c-input-form"
                             placeholder="+1(XXX) XXX-XXXX"
                             class="el-input__inner"
@@ -240,6 +237,7 @@ function Downloadpage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import './blog.css';
+import { Footer } from '..';
 
 import job1 from '../../assets/job1.jpeg';
 import job11 from '../../assets/job11.jpeg';
@@ -47,7 +48,7 @@ function Blogjob() {
                     </div>
                 </div>
             </div>
-
+            <Footer/>
         </div>
     );
 }
