@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 import { useUserAuthrec } from "../../contextrec/UserAuthContextrec";
 import "./login_signuprec.css";
 import { Footer } from '..';
+import { Header } from '..';
 
 const Signuprec = () => {
   const [email, setEmail] = useState("");
@@ -26,6 +27,7 @@ const Signuprec = () => {
 
   return (
     <>
+    <Header/>
     <style>{'body { background: linear-gradient(-45deg, #00ffcc, #66ccff, #00ccff, #0066ff); animation: gradient 5s ease infinite; background-size: 400%;}'}</style>
       <div className="p-4 box">
         <div className="login__logo">

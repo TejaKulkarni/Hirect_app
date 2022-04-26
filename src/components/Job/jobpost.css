@@ -1,0 +1,91 @@
+section{
+    background-color: #312e2e;
+    height: 200px;
+}
+
+section .head5{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.box1{
+    border: 1px solid rgb(235, 235, 235);
+    height: 70px;
+    width: 1000px;
+    padding: 10px;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -40px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.tim input{
+    margin-left: 350px;
+    width: 500px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.box2{
+    border: 1px solid rgb(235, 235, 235);
+    height: 100px;
+    width: 1000px;
+    padding: 10px;
+    position: relative;
+    margin-left: 132px;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.box2:hover{
+    box-shadow: 5px 5px 2px #888888;
+    transition: ease-in-out .3s;
+}
+
+.box2 .subtitle1{
+    font-size: 25px;
+}
+
+.box2 .subtitle2{
+    font-size: 20px;
+}
+
+.box2 .subtitle3{
+    margin-left: 400px;
+    margin-top: -60px;
+}
+
+
+.box2 .tiny{
+    margin-left: 800px;
+    margin-top: -35px;
+    font-size: 13px;
+}
+
+
+.box2 button{
+    margin-left: 820px;
+    margin-top: 10px;
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.box2 button:hover{
+    background-color: rgb(240, 240, 240);
+    transition: ease-in-out .3s;
+}
+
+
+

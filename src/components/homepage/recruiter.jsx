@@ -4,6 +4,7 @@ import './recruiter.css';
 import { Footer } from '..';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Header } from '..';
 
 import titleImg from '../../assets/homepageb.png';
 import midimg from '../../assets/midimg.png';
@@ -17,6 +18,7 @@ const Recruiter = () => {
     }, []);
     return (
         <>
+            <Header/>
             <div className="container">
                 <div className="up"></div>
                 <div className="down"></div>

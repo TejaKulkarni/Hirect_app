@@ -1,0 +1,18 @@
+.middle .midhead{
+    margin-top: 350px;
+    font-size: 50px;
+    font-weight: 600;
+    float: left;
+}
+
+.column {
+    width: 60%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

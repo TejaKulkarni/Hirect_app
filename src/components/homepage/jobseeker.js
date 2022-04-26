@@ -4,6 +4,7 @@ import './jobseeker.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Footer } from '..';
+import { Header } from '..';
 
 import titleImg from '../../assets/titleimg1.png';
 import midimg from '../../assets/mimg.png';
@@ -19,6 +20,7 @@ const Jobseeker = () => {
     }, []);
     return (
         <>
+            <Header/>
             <div className="container">
                 <div className="up1"></div>
                 <div className="down1"></div>

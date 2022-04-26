@@ -8,9 +8,12 @@ import fb from '../../assets/fb.png';
 import yt from '../../assets/yt.png';
 import insta from '../../assets/insta.png';
 import tt from '../../assets/tiktok.png';
+import { Header } from '..';
 
 const Contact = () => {
         return (
+            <>
+            <Header/>
             <footer>
                 <div className="container">
                     <img src={logo} alt="logo"/>
@@ -52,6 +55,7 @@ const Contact = () => {
                     <div className="tt"><a href='https://www.tiktok.com/@hirectapp'><img src={ tt } alt='tiktok'/></a></div>
                 </div>
             </footer>
+            </>
         );
 }
 

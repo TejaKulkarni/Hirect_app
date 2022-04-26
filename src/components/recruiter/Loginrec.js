@@ -6,6 +6,7 @@ import GoogleButton from "react-google-button";
 import { useUserAuthrec } from "../../contextrec/UserAuthContextrec";
 import "./login_signuprec.css";
 import { Footer } from '..';
+import { Header } from '..';
 
 const Loginrec = () => {
   const [email, setEmail] = useState("");
@@ -38,6 +39,7 @@ const Loginrec = () => {
 
   return (
     <>
+    <Header/>
     <style>{'body { background: linear-gradient(-45deg, #00ffcc, #66ccff, #00ccff, #0066ff); animation: gradient 5s ease infinite; background-size: 400%;}'}</style>
     <br/><br/>
       <div className="p-4 box">

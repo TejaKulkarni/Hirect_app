@@ -1,5 +1,6 @@
 import './blog.css';
 import { Footer } from '..';
+import { Header } from '..';
 
 import rec1 from '../../assets/rec1.jpeg';
 import rec11 from '../../assets/rec11.png';
@@ -11,6 +12,8 @@ import rec31 from '../../assets/rec31.png';
 
 function Blogrec() {
     return (
+        <>
+        <Header/>
         <div>
             <div className="header">
                 <h1>Hirect Blogs For Recruiters</h1>
@@ -54,6 +57,7 @@ function Blogrec() {
             </div>
             <Footer/>
         </div>
+        </>
     );
 }
 
