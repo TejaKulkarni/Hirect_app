@@ -68,7 +68,7 @@ const Homerec = () => {
         </div>
         <div className="h10">Post a Job</div>
         <div className="p10">Find, contact, and hire high-quality candidates faster than ever.</div>
-        <Link to='/addjobrec'><button className="btn-success">Add job</button></Link>
+        <Link to='/addjobrec'><button className="btn12">Add job</button></Link>
       </div>
     </>
   );
