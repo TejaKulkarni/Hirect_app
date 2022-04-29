@@ -2,11 +2,25 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './header.css';
+import { NavDropdown } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
+import { useUserAuth } from "../../context/UserAuthContext";
 import { useDetectOutsideClick } from './useDetectOutsideClick';
 
 import logo from '../../assets/hirect-logo.png';
 
-const Header = () => { 
+const Headerjob = () => { 
+    const { logOut, user } = useUserAuth();
+    const navigate = useNavigate();
+    const handleLogout = async () => {
+    try {
+      await logOut();
+      navigate("/");
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
@@ -25,7 +39,7 @@ const Header = () => {
         window.addEventListener('resize', showButton);
         return () => window.removeEventListener('resize', showButton);
     }, []);
-    
+
     const dropdownRef = useRef(null);
     const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
     const onClick = () => setIsActive(!isActive);
@@ -45,6 +59,7 @@ const Header = () => {
             window.removeEventListener('click', pageClickEvent);
           }
     }, [isActive]);
+    
 
     return (
         <>
@@ -58,16 +73,13 @@ const Header = () => {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link>
+                            <Link to='/home' className='nav-links' onClick={closeMobileMenu}>Dashboard</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/jobseeker' className='nav-links' onClick={closeMobileMenu}>Job Seekers</Link>
+                            <Link to='/jobpost' className='nav-links' onClick={closeMobileMenu}>Jobs</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>Contact Us</Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/download' className='nav-links' onClick={closeMobileMenu}>Download</Link>
+                            <Link to='/chats' className='nav-links' onClick={closeMobileMenu}>Inbox</Link>
                         </li>
                     </ul>
                     
@@ -75,18 +87,19 @@ const Header = () => {
                 <div className='drop'>
                     <div className="menu-container">
                         <button onClick={onClick} className="menu-trigger">
-                            <span>Blogs</span>
+                            <span>Profile</span>
+                            <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/df/df7789f313571604c0e4fb82154f7ee93d9989c6.jpg" alt="User avatar" />
                         </button>
                         <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                             <ul>
-                                <li><Link to='/blogrec' className='nav-links' onClick={closeMobileMenu}>Recruiters</Link></li>
-                                <li style={{cursor: 'pointer'}}><Link to='/blogjob' className='nav-links' onClick={closeMobileMenu}>Job Seekers</Link></li>
+                                <li><Link to='/showprofile' className='nav-links' onClick={closeMobileMenu}>View Profile</Link></li>
+                                <li onClick={handleLogout} className='nav-links' style={{cursor: 'pointer'}}>Logout</li>
                             </ul>
                         </nav>
                     </div>
-                        {/*<NavDropdown title="Blog">
-                            <NavDropdown.Item><Link to='/blogrec' className='nav-links' onClick={closeMobileMenu}>Recruiters</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to='/blogjob' className='nav-links' onClick={closeMobileMenu}>Job Seekers</Link></NavDropdown.Item>
+                        {/*<NavDropdown title="Profile">
+                            <NavDropdown.Item><Link to='/showprofile' className='nav-links' onClick={closeMobileMenu}>View Profile</Link></NavDropdown.Item>
+                            <NavDropdown.Item className='nav-links' onClick={handleLogout}>Log out</NavDropdown.Item>
     </NavDropdown> */}
                     </div>
             </div>
@@ -94,4 +107,4 @@ const Header = () => {
     );
 }
  
-export default Header;
+export default Headerjob;

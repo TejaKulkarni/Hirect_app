@@ -1,0 +1,56 @@
+.section{
+    background-color: #53f2cd;
+    height: 400px;
+}
+
+.section .hero1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-left: 200px;
+}
+
+.section .card{
+    width: 400px;
+    padding: 20px;
+    margin-left: 1000px;
+    border: 2px solid #000;
+    box-shadow: 10px 5px 5px black;
+    position: absolute;
+    top: 300px;
+}
+
+.section .card .cardhead{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.section .card .cardhead1{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.container .h9{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.container .card{
+    padding: 20px;
+    margin-left: 20px;
+    border: none;
+    width: 300px;
+}
+
+.container .h10{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.container .p10{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+

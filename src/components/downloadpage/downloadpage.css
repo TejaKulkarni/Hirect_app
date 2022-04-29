@@ -1,0 +1,530 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.get-hirect-app-c-page .el-input__inner {
+  border-color: #fff;
+  border-radius: 8px 8px 8px 8px;
+  height: 56px;
+}
+.get-hirect-app-c-page .el-input-group__prepend {
+  background-color: #fff;
+  border-right: 1px solid #0e101a;
+  border-radius: 8px 0 0 8px;
+  height: 54px;
+}
+.main-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0e101a;
+  line-height: 58px;
+  margin: 40px 0 0 50px;
+}
+.get-hirect-app-c-page {
+  width: 600px;
+  height: 700px;
+  box-shadow: 0 23px 47px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+}
+.get-hirect-app-c-page .get-hirect-app {
+  width: 100%;
+  height: 260px;
+}
+.get-hirect-app-c-page .get-hirect-app .get-hirect-input {
+  margin-top: 30px;
+  width: 100%;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-input
+  .get-hirect-c-input-form {
+  width: 508px;
+  line-height: 54px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #0e101a;
+}
+.get-hirect-app-c-page .get-hirect-app .get-hirect-input .get-hirect-input-btn {
+  width: 508px;
+  height: 56px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-input
+  .get-hirect-input-img-succe {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+}
+.get-hirect-app-c-page .get-hirect-app .get-hirect-input-err-msg {
+  width: 600px;
+  height: 30px;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0e101a;
+}
+.get-hirect-app-c-page .get-hirect-app .get-hirect-display {
+  width: 100%;
+  height: 200px;
+  margin-top: 18px;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-display
+  .downloadDialog-button {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-display
+  .downloadDialog-button
+  .downloadDialog-button-android,
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-display
+  .downloadDialog-button
+  .downloadDialog-button-ios {
+  width: 120px;
+  height: 36px;
+  cursor: pointer;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-display
+  .downloadDialog-button
+  .downloadDialog-button-pkg-container {
+  position: relative;
+  margin: 30px 0;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-display
+  .downloadDialog-button
+  .downloadDialog-button-pkg-container
+  .downloadDialog-button-pkg {
+  width: 120px;
+  height: 36px;
+  cursor: pointer;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-display
+  .downloadDialog-button
+  .downloadDialog-button-pkg-container
+  .popover-img {
+  width: 120px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  top: -36px;
+  cursor: pointer;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-display
+  .QRcode-pic-container {
+  width: 100%;
+  margin-top: 20px;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-display
+  .QRcode-pic-container
+  .QRcode-pic-border {
+  margin: 0 12px 0 0;
+  width: 200px;
+  height: 200px;
+}
+.get-hirect-app-c-page
+  .get-hirect-app
+  .get-hirect-display
+  .QRcode-pic-container
+  .get-hirect-app-totally {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.common-title {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #0e101a;
+  line-height: 58px;
+  padding: 60px 0;
+}
+.small-title {
+  font-size: 42px;
+  font-weight: 400;
+  color: #0e101a;
+  line-height: 50px;
+}
+.area-2-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0e101a;
+  line-height: 29px;
+  margin: 40px 0;
+}
+.common-text {
+  font-size: 20px;
+  font-weight: 300;
+  color: #0e101a;
+  line-height: 26px;
+}
+.main-title {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #0e101a;
+  line-height: 71px;
+  margin-top: 50px;
+}
+.categories-container {
+  width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.categories-container .categories-item {
+  background: #fff;
+  border-radius: 30px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.categories-container .categories-item,
+.categories-container .categories-more {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 36px;
+  margin: 0 15px 24px 0;
+  font-weight: 700;
+  color: #0e101a;
+}
+.categories-container .categories-more {
+  border-radius: 39px;
+  border: 2px solid #0e101a;
+  font-size: 26px;
+}
+.title-area {
+  width: 1220px;
+  height: 500px;
+  margin: 0 auto;
+}
+.title-area .title-area-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-area .title-area-bottom .title-area-left {
+  margin-top: -80px;
+  width: 500px;
+}
+.title-area .title-area-img {
+  width: 630px;
+  height: 330px;
+}
+.form-area {
+  display: flex;
+  width: 1220px;
+  height: 700px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 0;
+}
+.form-area .form-area-right .form-area-img {
+  width: 502px;
+  height: 552px;
+}
+.download-step {
+  margin: 0 auto;
+  width: 1220px;
+  height: 700px;
+  padding-top: 100px;
+  position: relative;
+}
+.download-step .download-step-img {
+  width: 1220px;
+}
+.download-step .download-step-text-container {
+  position: absolute;
+  top: 430px;
+  left: 70px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seeking-candidate {
+  margin: 0 auto;
+  display: flex;
+  padding-top: 150px;
+  width: 1220px;
+  height: 550px;
+  justify-content: space-between;
+}
+.seeking-candidate .seeking-candidate-img {
+  width: 494px;
+  height: 398px;
+}
+.seeking-candidate .seeking-candidate-right .seeking-candidate-btn {
+  width: 349px;
+  height: 84px;
+  background: #0e101a;
+  border-radius: 42px;
+  border: none;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 34px;
+  margin-top: 74px;
+}
+.green-area {
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(0, 204, 180, 0.08);
+}
+.green-area .green-area-categories {
+  width: 1189px;
+  margin-bottom: 50px;
+}
+.green-area .green-area-city {
+  width: 1164px;
+}
+.get-hirect-app-page[data-v-9783d36c] .el-input__inner {
+  border-color: #fff;
+  border-radius: 8px 8px 8px 8px;
+  height: 56px;
+}
+.get-hirect-app-page[data-v-9783d36c] .el-input-group__prepend {
+  background-color: #fff;
+  border-right: 1px solid #0e101a;
+  border-radius: 8px 0 0 8px;
+  height: 54px;
+}
+.get-hirect-app-page .get-hirect-app[data-v-9783d36c] {
+  width: 100%;
+  height: 550px;
+  background-color: #f9fbff;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-app-container[data-v-9783d36c] {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-app-container
+  .get-hirect-app-try[data-v-9783d36c] {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  padding: 80px 0 0;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-app-container
+  .get-hirect-input[data-v-9783d36c] {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  width: 600px;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-app-container
+  .get-hirect-input
+  .get-hirect-input-form[data-v-9783d36c] {
+  width: 400px;
+  line-height: 54px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #0e101a;
+  margin-right: 10px;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-app-container
+  .get-hirect-input
+  .get-hirect-input-btn[data-v-9783d36c] {
+  width: 190px;
+  height: 56px;
+  border-color: #0e101a;
+  background: #0e101a;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-app-container
+  .get-hirect-input
+  .get-hirect-input-btn[data-v-9783d36c]:hover {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-app-container
+  .get-hirect-input
+  .get-hirect-input-img-succe[data-v-9783d36c] {
+  position: absolute;
+  right: 220px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-app-container
+  .get-hirect-input-err-msg[data-v-9783d36c] {
+  position: absolute;
+  top: 287px;
+  left: 3px;
+  width: 600px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0e101a;
+}
+.get-hirect-app-page .get-hirect-app .get-hirect-display[data-v-9783d36c] {
+  width: 600px;
+  height: 100px;
+  margin: 15px auto;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-display
+  .get-hirect-apps[data-v-9783d36c] {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-display
+  .get-hirect-apps
+  .get-hirect-app-button-ios[data-v-9783d36c] {
+  width: 120px;
+  height: 36px;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-display
+  .get-hirect-apps
+  .get-hirect-app-button-android[data-v-9783d36c] {
+  width: 120px;
+  height: 36px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-display
+  .get-hirect-apps
+  .downloadDialog-button-pkg-container[data-v-9783d36c] {
+  position: relative;
+  width: 120px;
+  height: 36px;
+  margin: 3px 10px 0;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-display
+  .get-hirect-apps
+  .downloadDialog-button-pkg-container
+  .downloadDialog-button-pkg[data-v-9783d36c] {
+  width: 120px;
+  height: 36px;
+  cursor: pointer;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-display
+  .get-hirect-apps
+  .downloadDialog-button-pkg-container
+  .popover-img[data-v-9783d36c] {
+  width: 120px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  top: -36px;
+  cursor: pointer;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-display
+  .QRcode-pic-container[data-v-9783d36c] {
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-display
+  .QRcode-pic-container
+  .QRcode-pic-border[data-v-9783d36c] {
+  margin: 0 20px 0 0;
+  width: 100px;
+  height: 100px;
+}
+.get-hirect-app-page
+  .get-hirect-app
+  .get-hirect-display
+  .QRcode-pic-container
+  .get-hirect-app-totally[data-v-9783d36c] {
+  font-size: 18px;
+  font-weight: 300;
+}

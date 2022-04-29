@@ -1,0 +1,475 @@
+.container .a{
+    font-size: 60px;
+    font-weight: 800;
+    position: relative;
+    margin-top: -350px;
+}
+
+.container .b{
+    font-size: 60px;
+    font-weight: 800;
+    position: relative;
+}
+
+.container .c{
+    font-size: 25px;
+    position: absolute;
+}
+
+.titleimg1{
+    position: relative;
+    top: 110px;
+    width: 600px;
+    height: 500px;
+    margin-left: 550px;
+}
+
+.container .up1{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    left: 0;
+    background: linear-gradient(180deg,#53f2cd,#29e19e);
+}
+
+.container .down1{
+    position: absolute;
+    top: 588px;
+    width: 0;
+    height: 0;
+    left: 0;
+    border-top: 100px solid #29e19e;
+    border-right: 100vw solid transparent;
+}
+
+.container .btn1 button{
+    width: 360px;
+    height: 64px;
+    text-align: center;
+    border-radius: 32px;
+    position: relative;
+    margin-top: 60px;
+    cursor: pointer;
+    border: none;
+}
+
+.container .btn1 button:hover{
+    background-color: #e7e7e7;
+}
+
+.container .btn1 .tbtn{
+    font-size: 24px;
+    font-weight: 600;
+    color: #00ccb4;
+}
+
+.mid .midhead{
+    margin-top: 500px;
+    margin-left: 600px;
+    font-size: 50px;
+    font-weight: 600;
+    float: right;
+}
+
+.mid .midpara{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 600px;
+    float: right;
+}
+
+.mid .midimg{
+    margin-top: -400px;
+    width: 550px;
+    height: 700px;
+    float: left;
+}
+
+.mid1 .midhead1 {
+    margin-top: 50px;
+    margin-left: 350px;
+    font-size: 50px;
+    font-weight: 600;
+    float: left;
+}
+
+.mid1 .row .col-md-4 .card{
+    margin-top: 450px;
+    width: 400px;
+    height: 300px;
+    border: none;
+    text-align: center;
+}
+
+.mid1 #m1{
+    float: right;
+    margin-right: 700px;
+}
+
+.mid1 #m2{
+    float: right;
+    margin-right: 300px;
+}
+
+.mid1 #m3{
+    float: right;
+    margin-right: -100px;
+}
+
+.mid1 .para{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mid2 .midhead2{
+    margin-top: 250px;
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: 630px;
+    float: left;
+}
+
+.mid2 .midpara2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 630px;
+    float: left;
+}
+
+.mid2 .midimg4{
+    margin-top: -200px;
+    width: 600px;
+    height: 500px;
+    float: right;
+}
+
+.mid3 .midhead3{
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 600;
+    float: left;
+    margin-left: 250px;
+}
+
+.mid3 .midimg5{
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .container .a{
+        font-size: 40px;
+        font-weight: 800;
+        position: relative;
+        margin-top: -200px;
+    }
+    
+    .container .b{
+        font-size: 40px;
+        font-weight: 800;
+        position: relative;
+    }
+    
+    .container .c{
+        font-size: 20px;
+        position: absolute;
+    }
+    
+    .titleimg1{
+        position: relative;
+        top: 70px;
+        width: 400px;
+        height: 300px;
+        margin-left: 300px;
+    }
+    
+    .container .up1{
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        background: linear-gradient(180deg,#53f2cd,#29e19e);
+    }
+    
+    .container .down1{
+        position: absolute;
+        top: 388px;
+        width: 0;
+        height: 0;
+        left: 0;
+        border-top: 100px solid #29e19e;
+        border-right: 100vw solid transparent;
+    }
+    
+    .container .btn1 button{
+        width: 260px;
+        height: 54px;
+        text-align: center;
+        border-radius: 32px;
+        position: relative;
+        margin-top: 50px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .container .btn1 .tbtn{
+        font-size: 20px;
+        font-weight: 600;
+        color: #00ccb4;
+    }
+
+    .mid .midhead{
+        margin-top: 200px;
+        margin-left: 470px;
+        font-size: 35px;
+        font-weight: 600;
+        float: right;
+    }
+    
+    .mid .midpara{
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 350px;
+        float: right;
+    }
+    
+    .mid .midimg{
+        margin-top: -200px;
+        width: 350px;
+        height: 500px;
+        float: left;
+    }
+
+    .mid1 .midhead1 {
+        margin-top: 50px;
+        margin-left: 150px;
+        font-size: 35px;
+        font-weight: 600;
+        float: left;
+    }
+    
+    .mid1 .row .col-md-4 .card{
+        margin-top: 450px;
+        width: 200px;
+        height: 100px;
+        border: none;
+        text-align: center;
+    }
+    
+    .mid1 #m1{
+        float: right;
+        margin-right: 400px;
+    }
+    
+    .mid1 #m2{
+        float: right;
+        margin-right: 150px;
+    }
+    
+    .mid1 #m3{
+        float: right;
+        margin-right: -50px;
+    }
+    
+    .mid1 .para{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .mid2 .midhead2{
+        margin-top: 200px;
+        font-size: 35px;
+        font-weight: 600;
+        margin-right: 430px;
+        float: left;
+    }
+    
+    .mid2 .midpara2{
+        font-size: 18px;
+        font-weight: 400;
+        margin-right: 430px;
+        float: left;
+    }
+    
+    .mid2 .midimg4{
+        margin-top: -150px;
+        width: 400px;
+        height: 300px;
+        float: right;
+    }
+    
+    .mid3 .midhead3{
+        margin-top: 100px;
+        font-size: 35px;
+        font-weight: 600;
+        float: left;
+        margin-left: 75px;
+    }
+    
+    .mid3 .midimg5{
+        margin-top: 20px;
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container .a{
+        font-size: 25px;
+        font-weight: 800;
+        position: relative;
+        margin-top: -100px;
+    }
+    
+    .container .b{
+        font-size: 25px;
+        font-weight: 800;
+        position: relative;
+    }
+    
+    .container .c{
+        font-size: 15px;
+        position: absolute;
+    }
+    
+    .titleimg1{
+        position: relative;
+        top: 70px;
+        width: 200px;
+        height: 200px;
+        margin-left: 210px;
+    }
+    
+    .container .up1{
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        left: 0;
+        background: linear-gradient(180deg,#53f2cd,#29e19e);
+    }
+    
+    .container .down1{
+        position: absolute;
+        top: 288px;
+        width: 0;
+        height: 0;
+        left: 0;
+        border-top: 100px solid #29e19e;
+        border-right: 100vw solid transparent;
+    }
+    
+    .container .btn1 button{
+        width: 160px;
+        height: 44px;
+        text-align: center;
+        border-radius: 32px;
+        position: relative;
+        margin-top: 30px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .container .btn1 .tbtn{
+        font-size: 15px;
+        font-weight: 600;
+        color: #00ccb4;
+    }
+
+    .mid .midhead{
+        margin-top: 150px;
+        margin-left: 218px;
+        font-size: 25px;
+        font-weight: 600;
+        float: right;
+    }
+    
+    .mid .midpara{
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: 200px;
+        float: right;
+    }
+    
+    .mid .midimg{
+        margin-top: -150px;
+        width: 200px;
+        height: 300px;
+        float: left;
+    }
+
+    .mid1 .midhead1 {
+        margin-top: 50px;
+        margin-left: 50px;
+        font-size: 25px;
+        font-weight: 600;
+        float: left;
+    }
+    
+    .mid1 .row .col-md-4 .card{
+        margin-top: 450px;
+        width: 100px;
+        height: 50px;
+        border: none;
+        text-align: center;
+    }
+    
+    .mid1 #m1{
+        margin-top: 300px;
+        float: right;
+        margin-right: 270px;
+    }
+    
+    .mid1 #m2{
+        margin-top: -50px;
+        float: right;
+        margin-right: 110px;
+    }
+    
+    .mid1 #m3{
+        margin-top: -50px;
+        float: right;
+        margin-right: -40px;
+    }
+    
+    .mid1 .para{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .mid2 .midhead2{
+        margin-top: 150px;
+        font-size: 25px;
+        font-weight: 600;
+        margin-right: 230px;
+        float: left;
+    }
+    
+    .mid2 .midpara2{
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 230px;
+        float: left;
+    }
+    
+    .mid2 .midimg4{
+        margin-top: -150px;
+        width: 250px;
+        height: 200px;
+        float: right;
+    }
+    
+    .mid3 .midhead3{
+        margin-top: 100px;
+        font-size: 25px;
+        font-weight: 600;
+        float: left;
+        margin-left: 5px;
+    }
+    
+    .mid3 .midimg5{
+        margin-top: 20px;
+        height: 100px;
+        width: 100%;
+    }
+}
